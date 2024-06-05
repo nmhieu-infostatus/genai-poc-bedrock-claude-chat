@@ -16,7 +16,7 @@ Parameters:
     Default: "[]"
   Region:
     Type: String
-    Default: "us-east-1"
+    Default: "ap-southeast-2"
 
 Resources:
   ProjectRole:
