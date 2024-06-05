@@ -195,7 +195,8 @@ def calculate_query_embedding(question: str) -> list[float]:
     model_id = DEFAULT_EMBEDDING_CONFIG["model_id"]
 
     # Currently only supports "cohere.embed-multilingual-v3"
-    assert model_id == "cohere.embed-multilingual-v3"
+    # update: change to embed english v3
+    assert model_id == "cohere.embed-english-v3"
 
     payload = json.dumps({"texts": [question], "input_type": "search_query"})
     accept = "application/json"
@@ -228,7 +229,7 @@ def calculate_document_embeddings(documents: list[str]) -> list[list[float]]:
     model_id = DEFAULT_EMBEDDING_CONFIG["model_id"]
 
     # Currently only supports "cohere.embed-multilingual-v3"
-    assert model_id == "cohere.embed-multilingual-v3"
+    assert model_id == "cohere.embed-english-v3"
 
     embeddings = []
     for i in range(0, len(documents), BATCH_SIZE):

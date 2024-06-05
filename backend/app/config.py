@@ -39,7 +39,7 @@ DEFAULT_MISTRAL_GENERATION_CONFIG: GenerationParams = {
 # Configure embedding parameter.
 DEFAULT_EMBEDDING_CONFIG: EmbeddingConfig = {
     # DO NOT change `model_id` (currently other models are not supported)
-    "model_id": "cohere.embed-multilingual-v3",
+    "model_id": "cohere.embed-english-v3",
     # NOTE: consider that cohere allows up to 2048 tokens per request
     "chunk_size": 1000,
     "chunk_overlap": 200,
