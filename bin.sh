@@ -63,7 +63,8 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-StackName="CodeBuildForDeploy"
+read -p "Enter stack name to be created (CamelCase):  " StackName
+# StackName="CodeBuildForDeploy"
 
 # Deploy the CloudFormation stack
 aws cloudformation deploy \
