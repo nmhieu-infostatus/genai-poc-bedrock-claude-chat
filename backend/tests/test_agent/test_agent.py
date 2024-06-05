@@ -25,7 +25,7 @@ from app.repositories.models.custom_bot import (
 
 
 class TestReactAgent(unittest.TestCase):
-    MODEL = "claude-v3-sonnet"
+    MODEL = "claude-v3-haiku"
 
     def test_create_react_agent(self):
         llm = BedrockLLM.from_model(model=self.MODEL)
